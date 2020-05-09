@@ -39,13 +39,22 @@ def Register(request):
     return render(request, "register/login.html", )
 
 
+from django.contrib.auth.hashers import check_password
+
+
 def signin(request):
     if request.method == 'POST':
         try:
+
             username = request.POST['username']
             password = request.POST['password']
             username = Profile.objects.get(username=username)
-            user = authenticate(username=username, password=password)
+            password = check_password(password=password, encoded=username.user.password)
+            if password == False:
+                context = {
+                    'message': "Password is Wrong",
+                }
+                return render(request, 'register/signin.html', context)
             return redirect(reverse('userregister:home'))
 
         except ObjectDoesNotExist:

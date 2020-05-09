@@ -76,8 +76,21 @@
         }
     }
 </style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
 <body>
 
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"> </a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+
+            <a href="{% url 'userregister:register' %}" class="w3-bar-item w3-button">Sign in</a>
+        </div>
+    </div>
+</div>
 <div class="container headerFix">
     <div class="row justify-content-around pt-5">
 
@@ -115,8 +128,9 @@
                                     <input type="text" placeholder="Location" name="location"
                                            required>
                                     <label for="tel"><b>Mobile Number</b></label>
-                                    <input type="text" placeholder="Mobile Number" name="phone"  pattern="^\d{3}\d{3}\d{4}$"
-                                            maxlength="10" required>
+                                    <input type="text" placeholder="Mobile Number" name="phone"
+                                           pattern="^\d{3}\d{3}\d{4}$"
+                                           maxlength="10" required>
                                     <small>Format:(Ten digit mobilr number) 8970797601</small>
 
 

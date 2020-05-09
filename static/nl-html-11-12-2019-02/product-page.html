@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product-Page</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/novellady.css" rel="stylesheet" type="text/css">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+	  <script src="https://kit.fontawesome.com/a47f3d6406.js" crossorigin="anonymous"></script>
+	  
+	  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	  
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  </head>
+  <body>
+  	<!-- body code goes here -->
+
+	  
+	  <div class="container-fluid headerHome fixed-top">
+		  <div class="row">
+			  <div class="col-6 col-md-3"><a href="index.html"><img srcset="images/novellady-logo.png 1x, images/novellady-logo@2x.png 2x" alt="Novellady Logo" class="logo"></a></div>
+			  <div class="col-md-6">
+				  <form class="form-inline" action="#!" enctype="multipart/form-data" method="post">
+					  <label class="sr-only" for="searchMain">Search for products, brands and more.</label>
+					  <div class="input-icons col-12">
+						  <i class="fas fa-search"></i>
+						  <input type="text" class="form-control col-10" id="searchKeyword" name="searchKeyword" placeholder="Search for products, brands and more.">
+					  </div>
+					  
+				  </form>
+			  </div>
+			  <div class="col-md-3 text-right">
+				  <div class="topIcons">
+					  <a href="wishlist.html"><img srcset="images/wishlist-icon.png 1x, images/wishlist-icon@2x.png 2x" alt="Wishlist"></a><br>
+					  Wishlist
+				  </div>
+				  <div class="topIcons">
+					  <a href="bag.html"><img srcset="images/shopping-bag-icon.png 1x, images/shopping-bag-icon@2x.png 2x" alt="My Bag"></a><br>
+					  My Bag
+				  </div>
+				  <div class="topIcons">
+					  <a href="profile.html"><img srcset="images/profile-icon.png 1x, images/profile-icon@2x.png 2x" alt="Profile"></a><br>
+					  Profile
+				  </div>
+			  </div>
+		  </div>
+		  <div class="row justify-content-end">
+			  <div class="col topNav">
+				  <a href="Shop.html" class="topNavLink">Fresh In</a>
+				  <a href="#!" class="topNavLink">Western Wear</a>
+				  <a href="#!" class="topNavLink">Sports &amp; Active Wear</a>
+				  <a href="#!" class="topNavLink">Lingerie &amp; Sleep Wear</a>
+				  <a href="#!" class="topNavLink">Casual Wear</a>
+				  <a href="#!" class="topNavLink">Tops</a>
+				  <a href="#!" class="topNavLink">Dresses</a>
+				  <a href="#!" class="topNavLink">Plus Size</a>
+			  </div>
+		  </div>
+	  </div>
+	  
+	  <div class="container headerFix">
+		  <div class="row">
+			  <div class="col-12">
+				  <nav aria-label="breadcrumb">
+					  <ol class="breadcrumb px-0">
+						  <li class="breadcrumb-item" aria-current="page"><a href="#!" class="text-uppercase">Home</a></li>
+						  <li class="breadcrumb-item"><a href="#!" class="text-uppercase">Fusion Wear</a></li>
+						  <li class="breadcrumb-item"><a href="#!" class="text-uppercase">Western Wear</a></li>
+						  <li class="breadcrumb-item active" aria-current="page">Vero Moda</li>
+					  </ol>
+				  </nav>
+			  </div>
+			  
+		  </div>
+		  
+		  <div class="row">
+			  <div class="col-12 dropdown-divider"></div>
+		  </div>
+		  
+		  <div class="row">
+			  <div class="col-md-7 order-2 order-md-1">
+				  <div class="row justify-content-between">
+					  <div class="col-2 productSmallImg">
+						  <a href="#!" class="prodSmImg"><img src="images/5.png" class="img-fluid"></a>
+						  <a href="#!" class="prodSmImg"><img src="images/img-01.png" class="img-fluid"></a>
+						  <a href="#!" class="prodSmImg"><img src="images/img-02.png" class="img-fluid"></a>
+						  <a href="#!" class="prodSmImg"><img src="images/img-03.png" class="img-fluid"></a>
+						  <a href="#!" class="prodSmImg"><img src="images/img-04.png" class="img-fluid"></a>
+					  </div>
+					  <div class="col-10 productBigImage">
+						  <img src="images/5.png" class="img-fluid">
+					  </div>
+				  </div>
+				  
+			  </div>
+			  
+			  <div class="col-md-5 order-1 order-md-2 pt-3">
+				  <h3><strong>Vero Moda</strong></h3>
+				  <p>Women Black Regular Fit</p>
+				  <h4>$99 <small class="ml-4 strikedText">$199</small><span class="discountText d-inline-block ml-4">(50% OFF)</span></h4>
+				  <p><span class="badge badgeNl">4.5 <i class="fas fa-star"></i></span></p>
+				  
+				  <div class="clearfix mb-4"></div>
+				  <label><h6><strong>Select Size</strong></h6></label>
+				  <select class="form-control-sm ml-4">
+					  <option>XS</option>
+					  <option>S</option>
+					  <option>M</option>
+					  <option>L</option>
+					  <option>XL</option>
+					  <option>XXL</option>
+				  </select>
+				  
+				  <a href="#!" class="btn linkNl ml-3" data-toggle="modal" data-target="#sizeChart">Size Chart</a>
+				  <!-- Size chart modal -->
+				  <div class="modal fade" id="sizeChart" tabindex="-1" role="dialog" aria-labelled-by="sizingChart" aria-hidden="true">
+					  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+						  <div class="modal-content">
+							  <div class="modal-header">
+								  <h5 class="modal-title" id="sizingChart">Size Chart</h5>
+								  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  </div>
+							  <div class="modal-body">
+								  <div class="row justify-content-center">
+									  <div class="col-11">
+										  *In inches
+										  <div class="table-responsive mt-2">
+											  <table class="table table-hover">
+												  <thead>
+													  <tr>
+														  <th scope="col">Size</th>
+														  <th scope="col">XS</th>
+														  <th scope="col">S</th>
+														  <th scope="col">M</th>
+														  <th scope="col">L</th>
+														  <th scope="col">XL</th>
+														  <th scope="col">XXL</th>
+													  </tr>
+												  </thead>
+												  <tbody>
+													  <tr>
+														  <th scope="row">Shoulder</th>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+													  </tr>
+													  <tr>
+														  <th scope="row">Bust</th>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+													  </tr>
+													  <tr>
+														  <th scope="row">Length</th>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+														  <td>15</td>
+													  </tr>
+												  </tbody>
+											  </table>
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+							  
+						  </div>
+					  </div>
+				  </div>
+				  <!-- Size chart modal end -->
+				  
+				  <div class="clearfix mb-4"></div>
+				  <h6><strong>Colour</strong></h6>
+				  <a href="#!"><img src="images/image-02.png" class="img-thumbnail" width="50px"></a>
+				  <a href="#!"><img src="images/image-01.png" class="img-thumbnail" width="50px"></a>
+				  
+				  <div class="clearfix mb-4"></div>
+				  <label><h6><strong>Qty</strong></h6></label>
+				  <select class="form-control-sm ml-4">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					  <option>6</option>
+				  </select>
+				  
+				  <div class="clearfix mb-5"></div>
+				  <a href="#!" class="btnBagBig">Add to bag</a>
+				  <a href="#!" class="btnWishBig ml-4">Wishlist</a>
+				  
+			  </div>
+			  
+		  </div>
+		  
+		  <div class="row mt-5">
+			  <div class="col-12">
+				  <ul class="nav nav-tabs" role="tablist">
+					  <li class="nav-item">
+						  <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-selected="true">Description</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" id="returnPolicy-tab" data-toggle="tab" href="#returnPolicy" role="tab" aria-selected="true">Return Policy</a>
+					  </li>
+				  </ul>
+				  <div class="tab-content">
+					  <div class="tab-pane fade show active p-3" id="description" role="tabpanel" aria-labelledby="description-tab">
+						  <!-- Description text -->
+						  <p>Description text</p>
+					  </div>
+					  <div class="tab-pane fade p-3" id="returnPolicy" role="tabpanel" aria-labelledby="returnPolicy-tab">
+						  <!-- Return Policy text -->
+						  <p>Return Policy text</p>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+		  
+		  <!-- Reviews -->
+		  <div class="row justify-content-center">
+			  <div class="col-12"><h2>Customer Reviews</h2></div>
+			  <div class="col-12 text-center"><h4>Average Rating 4.5 <i class="fas fa-star nlColour"></i></h4></div>
+		  </div>
+		  <div class="row justify-content-end">
+			  <div class="col-auto">
+				  <form class="form-inline">
+					  <label class="mr-2">Sort by</label>
+					  <select class="custom-select">
+						  <option selected>Most Recent</option>
+						  <option>Oldest</option>
+					  </select>
+				  </form>
+			  </div>
+		  </div>
+		  
+		  <div class="row my-3">
+			  <div class="col"><div class="dropdown-divider"></div></div>
+		  </div>
+		  
+		  <div class="row">
+			  <div class="col-12 pb-2 border-bottom mb-4">
+				  <p><span class="badge badgeNl">4.5 <i class="fas fa-star"></i></span> <strong>Best in the market</strong></p>
+				  <p>nice and comfortable. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				  <p><a data-fancybox="gallery" href="images/img-03.png" data-caption="Best in the market" class="mr-2"><img class="img-thumbnail" width="50px" src="images/img-03.png"></a><a data-fancybox="gallery1" href="images/img-01.png" data-caption="Best in the market" class="mr-2"><img class="img-thumbnail" width="50px" src="images/img-01.png"></a></p>
+				  <p class="text-black-50">John Doe on 21-11-2019</p>
+				  
+			  </div>
+			  <div class="col-12 pb-2 border-bottom mb-4">
+				  <p><span class="badge badgeNl">4.5 <i class="fas fa-star"></i></span> <strong>Best in the market</strong></p>
+				  <p>nice and comfortable. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				  <p><a data-fancybox="gallery" href="images/img-03.png" data-caption="Best in the market" class="mr-2"><img class="img-thumbnail" width="50px" src="images/img-03.png"></a><a data-fancybox="gallery2" href="images/img-01.png" data-caption="Best in the market" class="mr-2"><img class="img-thumbnail" width="50px" src="images/img-01.png"></a></p>
+				  <p class="text-black-50">John Doe on 21-11-2019</p>
+				  
+			  </div>
+			  <div class="col-12 pb-2 border-bottom mb-4">
+				  <p><span class="badge badgeNl">4.5 <i class="fas fa-star"></i></span> <strong>Best in the market</strong></p>
+				  <p>nice and comfortable. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				  <p><a data-fancybox="gallery" href="images/img-03.png" data-caption="Best in the market" class="mr-2"><img class="img-thumbnail" width="50px" src="images/img-03.png"></a><a data-fancybox="gallery3" href="images/img-01.png" data-caption="Best in the market" class="mr-2"><img class="img-thumbnail" width="50px" src="images/img-01.png"></a></p>
+				  <p class="text-black-50">John Doe on 21-11-2019</p>
+				  
+			  </div>
+		  </div>
+		  
+		  
+		  <div class="row justify-content-center">
+			  <div class="col" id="similaritems">
+				  <h2>Similar Items</h2>
+			  </div>
+		  </div>
+	  
+		  <div class="row justify-content-around">
+			  <div class="col-md-10">
+				  <div class="col-md-12 prodList similarCarousel">
+					  <!-- Product listings -->
+					  <div class="prodListSingle">
+						  <div class="prodImg">
+							  <a href="#!"><img src="images/image-01.png" alt="Vero Moda"></a>
+							  <div class="prodActions w-100">
+								  <div class="prodSize">
+									  <div class="prodSizeTitle">Select size</div>
+									  <div class="sizeOptions">
+										  <a href="#!"><span class="sizeOption">XS</span></a>
+										  <a href="#!"><span class="sizeOption">S</span></a>
+										  <a href="#!"><span class="sizeOption">M</span></a>
+										  <a href="#!"><span class="sizeOption">L</span></a>
+										  <a href="#!"><span class="sizeOption">XL</span></a>
+									  </div>
+								  </div>
+								  <a href="#!" class="btnBag">Add to bag</a>
+								  <a href="#!" class="btnWish">Wishlist</a>
+							  </div>
+						  </div>
+                      
+                    <div class="prodDetails">
+                      <a href="#!" class="prodName">Vero Moda</a>
+                      <p>Women Regular Fit</p>
+                      <span class="prodPrice">$99</span>
+                      </div>
+                    </div>
+                    
+                  <div class="prodListSingle">
+                    <div class="prodImg">
+                      <a href="#!"><img src="images/image-02.png" alt="Vero Moda"></a>
+                      <div class="prodActions">
+                        <div class="prodSize">
+                          <div class="prodSizeTitle">Select size</div>
+                          <div class="sizeOptions">
+                            <a href="#!"><span class="sizeOption">XS</span></a>
+                            <a href="#!"><span class="sizeOption">S</span></a>
+                            <a href="#!"><span class="sizeOption">M</span></a>
+                            <a href="#!"><span class="sizeOption">L</span></a>
+                            <a href="#!"><span class="sizeOption">XL</span></a>
+                            </div>
+                          </div>
+                        <a href="#!" class="btnBag">Add to bag</a>
+                        <a href="#!" class="btnWish">Wishlist</a>
+                        </div>
+                      </div>
+                      
+                    <div class="prodDetails">
+                      <a href="#!" class="prodName">Mock Neck Suite</a>
+                      <p>Women Black Solid</p>
+                      <span class="prodPrice">$109</span>
+                      </div>
+                    </div>
+                    
+                  <div class="prodListSingle">
+                    <div class="prodImg">
+                      <a href="#!"><img src="images/image-03.png" alt="Vero Moda"></a>
+                      <div class="prodActions">
+                        <div class="prodSize">
+                          <div class="prodSizeTitle">Select size</div>
+                          <div class="sizeOptions">
+                            <a href="#!"><span class="sizeOption">XS</span></a>
+                            <a href="#!"><span class="sizeOption">S</span></a>
+                            <a href="#!"><span class="sizeOption">M</span></a>
+                            <a href="#!"><span class="sizeOption">L</span></a>
+                            <a href="#!"><span class="sizeOption">XL</span></a>
+                            </div>
+                          </div>
+                        <a href="#!" class="btnBag">Add to bag</a>
+                        <a href="#!" class="btnWish">Wishlist</a>
+                        </div>
+                      </div>
+                      
+                    <div class="prodDetails">
+                      <a href="#!" class="prodName">Sassafras</a>
+                      <p>Women Black Regular</p>
+                      <span class="prodPrice">$99</span>
+                      </div>
+                    </div>
+                    
+                  <div class="prodListSingle">
+                    <div class="prodImg">
+                      <a href="#!"><img src="images/image-04.png" alt="Vero Moda"></a>
+                      <div class="prodActions">
+                        <div class="prodSize">
+                          <div class="prodSizeTitle">Select size</div>
+                          <div class="sizeOptions">
+                            <a href="#!"><span class="sizeOption">XS</span></a>
+                            <a href="#!"><span class="sizeOption">S</span></a>
+                            <a href="#!"><span class="sizeOption">M</span></a>
+                            <a href="#!"><span class="sizeOption">L</span></a>
+                            <a href="#!"><span class="sizeOption">XL</span></a>
+                            </div>
+                          </div>
+                        <a href="#!" class="btnBag">Add to bag</a>
+                        <a href="#!" class="btnWish">Wishlist</a>
+                        </div>
+                      </div>
+                      
+                    <div class="prodDetails">
+                      <a href="#!" class="prodName">Sassafras</a>
+                      <p>Women Red Solid</p>
+                      <span class="prodPrice">$89</span>
+                      </div>
+                    </div>
+                    
+                  <div class="prodListSingle">
+                    <div class="prodImg">
+                      <a href="#!"><img src="images/image-01.png" alt="Vero Moda"></a>
+                      <div class="prodActions">
+                        <div class="prodSize">
+                          <div class="prodSizeTitle">Select size</div>
+                          <div class="sizeOptions">
+                            <a href="#!"><span class="sizeOption">XS</span></a>
+                            <a href="#!"><span class="sizeOption">S</span></a>
+                            <a href="#!"><span class="sizeOption">M</span></a>
+                            <a href="#!"><span class="sizeOption">L</span></a>
+                            <a href="#!"><span class="sizeOption">XL</span></a>
+                            </div>
+                          </div>
+                        <a href="#!" class="btnBag">Add to bag</a>
+                        <a href="#!" class="btnWish">Wishlist</a>
+                        </div>
+                      </div>
+                      
+                    <div class="prodDetails">
+                      <a href="#!" class="prodName">Vero Moda</a>
+                      <p>Women Regular Fit</p>
+                      <span class="prodPrice">$99</span>
+                      </div>
+                    </div>
+                    
+                  <div class="prodListSingle">
+                    <div class="prodImg">
+                      <a href="#!"><img src="images/image-02.png" alt="Vero Moda"></a>
+                      <div class="prodActions">
+                        <div class="prodSize">
+                          <div class="prodSizeTitle">Select size</div>
+                          <div class="sizeOptions">
+                            <a href="#!"><span class="sizeOption">XS</span></a>
+                            <a href="#!"><span class="sizeOption">S</span></a>
+                            <a href="#!"><span class="sizeOption">M</span></a>
+                            <a href="#!"><span class="sizeOption">L</span></a>
+                            <a href="#!"><span class="sizeOption">XL</span></a>
+                            </div>
+                          </div>
+                        <a href="#!" class="btnBag">Add to bag</a>
+                        <a href="#!" class="btnWish">Wishlist</a>
+                        </div>
+                      </div>
+                      
+                    <div class="prodDetails">
+                      <a href="#!" class="prodName">Mock Neck Suite</a>
+                      <p>Women Black Solid</p>
+                      <span class="prodPrice">$109</span>
+                      </div>
+                    </div>
+                    
+                  <div class="prodListSingle">
+                    <div class="prodImg">
+                      <a href="#!"><img src="images/image-03.png" alt="Vero Moda"></a>
+                      <div class="prodActions">
+                        <div class="prodSize">
+                          <div class="prodSizeTitle">Select size</div>
+                          <div class="sizeOptions">
+                            <a href="#!"><span class="sizeOption">XS</span></a>
+                            <a href="#!"><span class="sizeOption">S</span></a>
+                            <a href="#!"><span class="sizeOption">M</span></a>
+                            <a href="#!"><span class="sizeOption">L</span></a>
+                            <a href="#!"><span class="sizeOption">XL</span></a>
+                            </div>
+                          </div>
+                        <a href="#!" class="btnBag">Add to bag</a>
+                        <a href="#!" class="btnWish">Wishlist</a>
+                        </div>
+                      </div>
+                      
+                    <div class="prodDetails">
+                      <a href="#!" class="prodName">Sassafras</a>
+                      <p>Women Black Regular</p>
+                      <span class="prodPrice">$99</span>
+                      </div>
+                    </div>
+                    
+                  <div class="prodListSingle">
+                    <div class="prodImg">
+                      <a href="#!"><img src="images/image-04.png" alt="Vero Moda"></a>
+                      <div class="prodActions">
+                        <div class="prodSize">
+                          <div class="prodSizeTitle">Select size</div>
+                          <div class="sizeOptions">
+                            <a href="#!"><span class="sizeOption">XS</span></a>
+                            <a href="#!"><span class="sizeOption">S</span></a>
+                            <a href="#!"><span class="sizeOption">M</span></a>
+                            <a href="#!"><span class="sizeOption">L</span></a>
+                            <a href="#!"><span class="sizeOption">XL</span></a>
+                            </div>
+                          </div>
+                        <a href="#!" class="btnBag">Add to bag</a>
+                        <a href="#!" class="btnWish">Wishlist</a>
+                        </div>
+                      </div>
+                      
+                    <div class="prodDetails">
+                      <a href="#!" class="prodName">Sassafras</a>
+                      <p>Women Red Solid</p>
+                      <span class="prodPrice">$89</span>
+                      </div>
+                    </div>
+                  <!-- Product listings end -->
+                  </div>
+              </div>
+			  
+			  <div class="col-md-2 align-self-center">
+				  <!--Carousel next/view all buttons -->
+				  <div class="nextIcon text-center">
+				    <a href="#!" class="carouselNextSimilar"><i class="fas fa-chevron-right"></i></a>
+					  <a href="#!" class="viewAll">View All</a>
+			    </div>
+		    </div>
+			  
+	    </div>
+	</div>  
+		  
+		  
+
+	  
+	  <footer>
+	  <div class="container-fluid">
+		  <div class="row justify-content-around">
+			  <div class="col-auto">
+				  <h3>Shopping</h3>
+				  <a href="#!">New Arrival</a>
+				  <a href="#!">Clothing</a>
+				  <a href="#!">Footwear</a>
+				  <a href="#!">Jewellery</a>
+				  <a href="#!">Accessories</a>
+			  </div>
+			  
+			  <div class="col-auto">
+				  <h3>Useful Links</h3>
+				  <a href="#!">Contact Us</a>
+				  <a href="#!">FAQ</a>
+				  <a href="#!">T&amp;C</a>
+				  <a href="#!">Track Orders</a>
+				  <a href="#!">Shipping</a>
+				  <a href="#!">Returns</a>
+			  </div>
+			  
+			  <div class="col-auto">
+				  <h3>Get Novel Lady App Now</h3>
+				  <a href="#!" class="appLink"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="146"/></a>
+				  <a href="#!" class="appLink"><img alt="Get it on App Store" src="images/appstore-icon.svg" width="120"/></a>
+				  
+				  <h3 class="mt-4">Follow Us On</h3>
+				  <a href="#!" class="iconLink"><i class="fab fa-twitter"></i></a>
+				  <a href="#!" class="iconLink"><i class="fab fa-facebook-f"></i></a>
+				  <a href="#!" class="iconLink"><i class="fab fa-instagram"></i></a>
+				  
+				  <h3 class="mt-4">Subscribe for Novel Lady News</h3>
+			  </div>
+			  
+			  <div class="col-auto">
+				  <div class="row">
+					  <div class="col-auto"><img src="images/30-days-return-icon.png" alt="30 days return icon"></div>
+					  <div class="col-auto">Return within 30 days<br>of receiving your order</div>
+				  </div>
+				  <div class="row mt-5">
+					  <div class="col-auto"><img src="images/delivery-icon-footer.png" alt="free delivery icon"></div>
+					  <div class="col-auto">Get free delivery for every order<br>above $99</div>
+				  </div>
+				  <div class="row mt-5">
+					  <div class="col-12">
+						  <form class="form-inline" action="#!" method="post" enctype="multipart/form-data" id="footerSubscription">
+							  <input type="email" class="form-control" id="footerEmail" name="emailId" placeholder="Your email address">
+							  <button type="submit" class="footerBtn">Subscribe</button>
+						  </form>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+		  
+	  
+	  <div class="container-fluid copyrightFooter">
+		  <div class="row justify-content-center">
+			  <div class="col-auto">&copy; 2019 Novel Lady. All rights reserved.</div>
+		  </div>
+	  </div>
+	  </footer>
+	  
+	  
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	  
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	  
+	  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	  <script src="js/novellady.js"></script>
+	  <script src="js/slide.js"></script>
+	  <script src="js/qty-plus-minus.js"></script>
+	  <script src="js/popup.js"></script>
+	  <script src="js/zoomsl.min.js"></script>
+	  <script>
+		  $(document).ready(function() {
+			  $(".productBigImage img").imagezoomsl({
+				  zoomrange: [5, 5],
+				  zoomstart: 5,
+				  disablewheel: false,
+			  });
+		  });
+	  </script>
+	  
+	  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	 
+  </body>
+
+	 	
+	  
+</html>

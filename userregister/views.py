@@ -3,6 +3,8 @@ from .models import *
 from django.shortcuts import render, redirect, reverse
 from django.contrib.auth import *
 from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.auth.hashers import check_password
+from django.db.models import Q
 
 
 def Register(request):
@@ -11,6 +13,7 @@ def Register(request):
             user = User()
             try:
                 User.objects.get(email=request.POST['email'])
+                Profile.objects.get(Q(username=request.POST['username']) | Q(phone=request.POST['phone']))
                 context = {
                     'message': "User already Exist"
                 }
@@ -39,16 +42,12 @@ def Register(request):
     return render(request, "register/login.html", )
 
 
-from django.contrib.auth.hashers import check_password
-
-
 def signin(request):
     if request.method == 'POST':
         try:
-
             username = request.POST['username']
             password = request.POST['password']
-            username = Profile.objects.get(username=username)
+            username = Profile.objects.get(Q(username=username) | Q(phone=username))
             password = check_password(password=password, encoded=username.user.password)
             if password == False:
                 context = {

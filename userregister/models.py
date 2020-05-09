@@ -7,5 +7,5 @@ from phonenumber_field.modelfields import PhoneNumber, PhoneNumberField
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE,primary_key=True)
     username = models.CharField(max_length=50)
-    phone = models.CharField(max_length=10,blank=True, default="")
+    phone = models.CharField(max_length=10,blank=True, default="",unique=True)
     location = models.CharField(max_length=30, blank=True)

@@ -113,13 +113,16 @@
                                     <p>Please fill in this form to create an account.</p>
                                     <hr>
                                     <label for="email"><b>Email</b></label>
-                                    <input type="text" placeholder="Enter Email" name="email" required>
+                                    <input type="text" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 
                                     <label for="email"><b>Username</b></label>
                                     <input type="text" placeholder="Username" name="username" required>
 
                                     <label for="password"><b>Password</b></label>
-                                    <input type="password" placeholder="password" name="password" required>
+                                    <input type="password" placeholder="password" name="password"
+                                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                           title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                           required>
 
                                     <label for="password"><b>Confirm Password</b></label>
                                     <input type="password" placeholder="Confirm Password" name="cpassword" required>
